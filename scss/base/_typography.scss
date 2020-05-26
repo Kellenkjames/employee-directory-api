@@ -1,0 +1,25 @@
+// TYPOGRAPHY
+
+*, 
+*:before, 
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5% /* This represents the base value for 1REM */
+}
+
+body {
+    line-height: 1.3;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
