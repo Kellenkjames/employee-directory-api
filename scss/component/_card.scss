@@ -3,6 +3,11 @@
 .card {
 
     display: flex;
+    align-items: center;
+    border: 1px solid $color-border;
+    border-radius: .5rem;
+    padding: 2rem;
+    width: 35%;
 
     &__avatar {
         border-radius: 50%;
@@ -12,6 +17,14 @@
 
     &__text-container {
         margin-left: 2rem;
+
+        &__name {
+            margin-bottom: .5rem;
+        }
+
+        &__email {
+            margin-bottom: .5rem;
+        }
 
         p {
             color: $color-dark;
