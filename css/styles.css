@@ -345,7 +345,7 @@ template {
   display: none;
 }
 
-.main {
+.wrapper {
   max-width: 170rem;
   margin: 0 auto;
 }
@@ -382,5 +382,14 @@ h1 {
   letter-spacing: .1rem;
   margin: 0;
   color: #4b4849;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
