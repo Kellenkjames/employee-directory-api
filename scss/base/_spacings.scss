@@ -4,3 +4,9 @@
     max-width: $main-max-width;
     margin: 0 auto;
 }
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
