@@ -9,6 +9,12 @@
     padding: 2rem;
     width: 32%;
     margin-bottom: 4rem;
+    transition: border-color .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $color-black;
+    }
 
     &__avatar {
         border-radius: 50%;
