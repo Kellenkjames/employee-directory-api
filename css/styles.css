@@ -1,3 +1,23 @@
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__avatar {
+  border-radius: 50%;
+  height: 18rem;
+  width: 18rem;
+}
+
+.card__text-container {
+  margin-left: 2rem;
+}
+
+.card__text-container p {
+  color: #4b4849;
+}
+
 .header {
   padding: 8rem 0;
 }
@@ -387,9 +407,11 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 2rem;
+  margin: 0;
 }
 
 p {
   font-size: 2rem;
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

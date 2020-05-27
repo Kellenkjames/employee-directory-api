@@ -1,0 +1,21 @@
+// CARD
+
+.card {
+
+    display: flex;
+
+    &__avatar {
+        border-radius: 50%;
+        height: 18rem;
+        width: 18rem;
+    }
+
+    &__text-container {
+        margin-left: 2rem;
+
+        p {
+            color: $color-dark;
+        }
+    }
+
+}
