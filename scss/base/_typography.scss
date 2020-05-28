@@ -30,7 +30,7 @@ h1 {
     text-transform: uppercase;
     margin: 0;
     color: $color-dark;
-    letter-spacing: .3rem;
+    letter-spacing: .3em;
 }
 
 .spacer {
@@ -72,17 +72,18 @@ h1 {
         &:nth-child(4) {
             animation-delay: .9s;
         }
+    }
 }
 
 @keyframes move-text {
 
     0% {
-        bottom: -.4rem;
+        bottom: -.2rem;
         opacity: 0;
     }
 
     50% {
-        bottom: .4rem
+        bottom: .2rem
     }
 
     100% {

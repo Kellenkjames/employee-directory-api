@@ -438,6 +438,7 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   color: #4b4849;
+  letter-spacing: .3em;
 }
 
 .spacer {
@@ -482,43 +483,13 @@ h1 span:nth-child(4) {
           animation-delay: .9s;
 }
 
-h1 span:nth-child(5) {
-  -webkit-animation-delay: .18s;
-          animation-delay: .18s;
-}
-
-h1 span:nth-child(6) {
-  -webkit-animation-delay: .22s;
-          animation-delay: .22s;
-}
-
-h1 span:nth-child(8) {
-  -webkit-animation-delay: .24s;
-          animation-delay: .24s;
-}
-
-h1 span:nth-child(9) {
-  -webkit-animation-delay: .26s;
-          animation-delay: .26s;
-}
-
-h1 span:nth-child(10) {
-  -webkit-animation-delay: .30s;
-          animation-delay: .30s;
-}
-
-h1 span:nth-child(11) {
-  -webkit-animation-delay: .32s;
-          animation-delay: .32s;
-}
-
 @-webkit-keyframes move-text {
   0% {
-    bottom: -.4rem;
+    bottom: -.2rem;
     opacity: 0;
   }
   50% {
-    bottom: .4rem;
+    bottom: .2rem;
   }
   100% {
     bottom: 0;
@@ -528,11 +499,11 @@ h1 span:nth-child(11) {
 
 @keyframes move-text {
   0% {
-    bottom: -.4rem;
+    bottom: -.2rem;
     opacity: 0;
   }
   50% {
-    bottom: .4rem;
+    bottom: .2rem;
   }
   100% {
     bottom: 0;
