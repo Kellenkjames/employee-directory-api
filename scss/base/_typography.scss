@@ -30,6 +30,7 @@ h1 {
     text-transform: uppercase;
     margin: 0;
     color: $color-dark;
+    letter-spacing: .3rem;
 }
 
 .spacer {
@@ -46,4 +47,49 @@ p {
     font-size: 2rem;
     margin: 0;
 }
+
+// Title [Animate IN]
+
+h1 {
+
+    span {
+        position: relative;
+        opacity: 0;
+        animation: move-text .75s forwards;
+
+        &:first-child {
+            animation-delay: .3s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: .5s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: .7s;
+        }
+
+        &:nth-child(4) {
+            animation-delay: .9s;
+        }
+}
+
+@keyframes move-text {
+
+    0% {
+        bottom: -.4rem;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: .4rem
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+
+}
+
 
