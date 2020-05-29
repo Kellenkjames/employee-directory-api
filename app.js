@@ -18,7 +18,6 @@ function displayEmployees(employeeData) {
     
     employees = employeeData;
     
-    
     // Store the employee HTML as we create it
     let employeeHTML = '';
     
@@ -44,4 +43,16 @@ function displayEmployees(employeeData) {
     
     gridContainer.innerHTML = employeeHTML;
     
+}
+
+// Function displayModal
+function displayModal(index) {
+
+    // Object destructuring
+    let { name, dob, phone, email, locaion: { city, street, state, postcode} , picture } = employees[index];
+
+    let date = new Date(dob.date);
+
+
+
 }
