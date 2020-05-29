@@ -1,8 +1,7 @@
 // SPACINGS
 
-.wrapper {
-    max-width: $main-max-width;
-    margin: 0 auto;
+.header {
+   @include main-spacing;
 }
 
 .grid-container {
@@ -10,4 +9,5 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @include main-spacing;
 }

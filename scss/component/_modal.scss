@@ -1,5 +1,27 @@
 // MODAL
 
-body.wrapper {
+body {
     position: relative;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+    position: relative;
+    width : 40rem;
+    margin: 25rem auto;
+    text-align: center;
+    background: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+}
+
+

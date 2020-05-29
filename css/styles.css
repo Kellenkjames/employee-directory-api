@@ -132,6 +132,30 @@
   padding: 8rem 0;
 }
 
+body {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  position: relative;
+  width: 40rem;
+  margin: 25rem auto;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -475,7 +499,7 @@ template {
   display: none;
 }
 
-.wrapper {
+.header {
   max-width: 170rem;
   margin: 0 auto;
 }
@@ -492,6 +516,8 @@ template {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 170rem;
+  margin: 0 auto;
 }
 
 *,
