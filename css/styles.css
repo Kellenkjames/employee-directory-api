@@ -21,23 +21,23 @@
 
 .card__avatar {
   border-radius: 50%;
-  height: 18rem;
-  width: 18rem;
+  height: 16rem;
+  width: 16rem;
 }
 
-.card__text-container {
+.card__text__container {
   margin-left: 2rem;
 }
 
-.card__text-container__name {
+.card__text__container__name {
   margin-bottom: .5rem;
 }
 
-.card__text-container__email {
+.card__text__container__email {
   margin-bottom: .5rem;
 }
 
-.card__text-container p {
+.card__text__container p {
   color: #4b4849;
 }
 

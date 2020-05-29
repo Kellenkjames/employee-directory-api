@@ -18,9 +18,11 @@
 
     &__avatar {
         border-radius: 50%;
+        height: 16rem;
+        width: 16rem;
     }
 
-    &__text-container {
+    &__text__container {
         margin-left: 2rem;
 
         &__name {
