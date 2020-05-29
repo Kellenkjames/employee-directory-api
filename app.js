@@ -49,10 +49,23 @@ function displayEmployees(employeeData) {
 function displayModal(index) {
 
     // Object destructuring
-    let { name, dob, phone, email, locaion: { city, street, state, postcode} , picture } = employees[index];
+    let { name, dob, phone, email, locaion: { city, street, state, postcode}, picture } = employees[index];
 
     let date = new Date(dob.date);
 
+    const modalHTML = `
+        <div class="modal__text__container">
+            <img class="modal__avatar" src="${picture.large}" />
+            <p class="modal__text__container__email">${email}</p>
+            <p class="modal__text__container__address">${city}</p>
+            <hr />
+            <p class="modal__text__container__phone">${phone}</p>
+            <p class="address">${street}, ${state} ${postcode}</p>
+            <p>Birthday:${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+        </div>
+    `;
 
+    overlay.classList.remove("hidden");
+    modalContainer.innerHTML = modalHTML;
 
 }
