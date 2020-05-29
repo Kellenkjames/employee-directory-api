@@ -153,7 +153,21 @@ body {
   background: #FFFFFF;
   border: 1px solid #D3D3D3;
   border-radius: 10px;
-  padding: 2rem 4rem;
+  padding: 5rem;
+}
+
+.modal__close {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background-color: transparent;
+  border: none;
+}
+
+.modal__avatar {
+  border-radius: 50%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

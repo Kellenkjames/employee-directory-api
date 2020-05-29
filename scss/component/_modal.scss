@@ -21,7 +21,21 @@ body {
     background: $color-white;
     border: 1px solid $color-border;
     border-radius: 10px;
-    padding: 2rem 4rem;
+    padding: 5rem;
+
+    &__close {
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        cursor: pointer;
+        font-size: 2.2rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+    }
 }
 
 
