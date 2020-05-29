@@ -1,10 +1,11 @@
 // GLOBAL VARIABLES
 let employees = [];
-const urlAPI = `https://randomuser.me/api?results=12&inc=name, picture, email, location, phone dob &noinfo &nat=US`;
+const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
+email, location, phone, dob &noinfo &nat=US`;
 const gridContainer = document.querySelector('.grid-container');
 const overlay = document.querySelector('.overlay');
-const modalContainer = document.querySelector('.modal-content');
-const modalClose = document.querySelector('.modal-close');
+const modalContainer = document.querySelector('.modal__content');
+const modalClose = document.querySelector('.modal__close');
 
 // Fetch Data from the API
 fetch(urlAPI)
@@ -38,7 +39,7 @@ function displayEmployees(employeeData) {
                     <p class="card__text__container__address">${city}</p>
                 </div>
             </div>
-        `
+        `;
     });
     
     gridContainer.innerHTML = employeeHTML;
@@ -49,7 +50,8 @@ function displayEmployees(employeeData) {
 function displayModal(index) {
 
     // Object destructuring
-    let { name, dob, phone, email, locaion: { city, street, state, postcode}, picture } = employees[index];
+    let { name, dob, phone, email, location: { city, street, state, postcode
+    }, picture } = employees[index];
 
     let date = new Date(dob.date);
 
@@ -68,4 +70,25 @@ function displayModal(index) {
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
 
-}
+};
+
+// Event Handler for Card Clicks
+gridContainer.addEventListener('click', e => {
+
+    // Make sure the click is not on the grid container itself 
+    if (e.target !== gridContainer) {
+
+        // Select the card element based on its proximity to actual element clicked 
+        const card = e.target.closest(".card");
+        const index = card.getAttribute('data-index');
+
+        console.log(e.target);
+
+        displayModal(index);
+    }
+});
+
+// Event Handler for Closing Modal
+modalClose.addEventListener('click', () => {
+    overlay.classList.add("hidden");
+});
