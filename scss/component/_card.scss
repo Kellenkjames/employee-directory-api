@@ -38,9 +38,10 @@
         }
     }
 
-    &:nth-child(odd), &:nth-child(even) {
+    &:nth-child(odd), 
+    &:nth-child(even) {
         opacity: 0;
-        animation: move-card 1s forwards;
+        animation: move-card .75s forwards;
     }
 
     &:first-child {
@@ -67,6 +68,10 @@
         animation-delay: .6s;
     }
 
+    &:nth-child(7) {
+        animation-delay: .7s;
+    }
+
     &:nth-child(8) {
         animation-delay: .8s;
     }
@@ -81,10 +86,6 @@
 
     &:nth-child(11) {
         animation-delay: .11s;
-    }
-
-    &:nth-child(12) {
-        animation-delay: .12s;
     }
 
 }
