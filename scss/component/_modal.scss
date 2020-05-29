@@ -25,12 +25,20 @@ body {
 
     &__close {
         position: absolute;
-        right: 3%;
-        top: 3%;
+        right: 4%;
+        top: 4%;
         cursor: pointer;
         font-size: 2.2rem;
         background-color: transparent;
         border: none;
+        opacity: .3;
+        transition: opacity .4s ease;
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 1;
+        }
     }
 
     &__avatar {

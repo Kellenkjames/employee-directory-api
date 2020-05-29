@@ -158,12 +158,19 @@ body {
 
 .modal__close {
   position: absolute;
-  right: 3%;
-  top: 3%;
+  right: 4%;
+  top: 4%;
   cursor: pointer;
   font-size: 2.2rem;
   background-color: transparent;
   border: none;
+  opacity: .3;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+.modal__close:hover, .modal__close:active, .modal__close:focus {
+  opacity: 1;
 }
 
 .modal__avatar {
