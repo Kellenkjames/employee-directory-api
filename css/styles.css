@@ -150,9 +150,12 @@ body {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
   width: 45rem;
-  margin: 25rem auto;
   text-align: center;
   background: #FFFFFF;
   border: 1px solid #D3D3D3;
