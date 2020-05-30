@@ -188,6 +188,7 @@ body {
 
 .modal__text__container p {
   margin-bottom: 1.2rem;
+  font-weight: 300;
 }
 
 .modal__text__container__birthday {
