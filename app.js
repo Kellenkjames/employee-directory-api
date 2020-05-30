@@ -1,7 +1,6 @@
 // GLOBAL VARIABLES
 let employees = [];
-const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
-email, location, phone, dob &noinfo &nat=US`;
+const urlAPI = `https://randomuser.me/api/?results=12&inc=name,picture,email,location,phone,dob&noinfo&nat=US`;
 const gridContainer = document.querySelector('.grid-container');
 const overlay = document.querySelector('.overlay');
 const modalContainer = document.querySelector('.modal__content');
@@ -50,7 +49,8 @@ function displayEmployees(employeeData) {
 function displayModal(index) {
 
     // Object destructuring
-    let { name, dob, phone, email, location: { city, street, state, postcode
+    let { name, dob, phone, email, 
+        location: { city, street, state, postcode
     }, picture } = employees[index];
 
     let date = new Date(dob.date);
@@ -62,8 +62,8 @@ function displayModal(index) {
             <p class="modal__text__container__address">${city}</p>
             <hr />
             <p class="modal__text__container__phone">${phone}</p>
-            <p class="address">${street}, ${state} ${postcode}</p>
-            <p>Birthday:${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+            <p class="modal__text__container__address">${street}, ${state} ${postcode}</p>
+            <p>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
         </div>
     `;
 
@@ -81,8 +81,6 @@ gridContainer.addEventListener('click', e => {
         // Select the card element based on its proximity to actual element clicked 
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
-
-        console.log(e.target);
 
         displayModal(index);
     }

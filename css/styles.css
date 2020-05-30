@@ -151,7 +151,7 @@ body {
 
 .modal {
   position: relative;
-  width: 40rem;
+  width: 45rem;
   margin: 25rem auto;
   text-align: center;
   background: #FFFFFF;
@@ -179,6 +179,19 @@ body {
 
 .modal__avatar {
   border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.modal__text__container__phone {
+  margin-top: 1.2rem;
+}
+
+.modal__text__container p {
+  margin-bottom: 1.2rem;
+}
+
+.modal__text__container__birthday {
+  margin-bottom: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
