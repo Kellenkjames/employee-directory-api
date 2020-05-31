@@ -75,6 +75,18 @@
   }
 }
 
+@media (max-width: 850px) {
+  .card__text__container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card__text__container p {
+    font-size: 1.7rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card__text__container {
     margin-left: 0;
@@ -243,7 +255,7 @@
 
 @media (max-width: 850px) {
   .header {
-    max-width: 80rem;
+    max-width: 78rem;
   }
 }
 
@@ -729,7 +741,7 @@ template {
 
 @media (max-width: 850px) {
   .grid-container {
-    max-width: 80rem;
+    max-width: 78rem;
   }
 }
 
