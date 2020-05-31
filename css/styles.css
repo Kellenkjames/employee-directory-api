@@ -230,7 +230,7 @@
 
 @media (max-width: 1024px) {
   .header {
-    max-width: 102rem;
+    max-width: 87rem;
   }
 }
 
@@ -704,7 +704,7 @@ template {
 
 @media (max-width: 1024px) {
   .grid-container {
-    max-width: 95rem;
+    max-width: 87rem;
   }
 }
 
