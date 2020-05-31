@@ -20,6 +20,11 @@
         border-radius: 50%;
         height: 16rem;
         width: 16rem;
+
+        @media (max-width: $bp-laptop) {
+            height: 14rem;
+            width: 14rem;
+        }
     }
 
     &__text__container {
@@ -88,6 +93,10 @@
         animation-delay: .11s;
     }
 
+    @media (max-width: $bp-laptop) {
+        width: 49%;
+    }
+
 }
 
 // ANIMATIONS
@@ -106,12 +115,3 @@
 
 }
 
-// 1024px [RESPONSIVE]
-
-@media (max-width: $bp-laptop) {
-
-    .card {
-        width: 49%;
-    }
-
-}

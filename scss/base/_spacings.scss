@@ -1,23 +1,14 @@
 // SPACINGS
 
-.header {
-   @include main-spacing;
-}
-
 .grid-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     @include main-spacing;
-}
 
-// 1024px [RESPONSIVE]
-
-@media (max-width: $bp-laptop) {
-
-    .grid-container {
-        flex-wrap: wrap;
+    @media (max-width: $bp-laptop) {
+        max-width: 95rem;
     }
-
 }
+
