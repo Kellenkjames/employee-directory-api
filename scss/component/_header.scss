@@ -16,6 +16,10 @@
         max-width: 87rem;
     }
 
+    @media (max-width: $bp-laptop-lg) {
+        max-width: 80rem;
+    }
+
     @media(max-width: $bp-tablet) {
         max-width: 70rem;
     }
