@@ -8,6 +8,10 @@
         max-width: 134rem;
     }
 
+    @media (max-width: $bp-laptop-md) {
+        max-width: 115rem;
+    }
+
     @media (max-width: $bp-laptop) {
         max-width: 95rem;
     }
