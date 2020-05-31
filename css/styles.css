@@ -40,6 +40,13 @@
   }
 }
 
+@media (max-width: 420px) {
+  .card__avatar {
+    height: 16rem;
+    width: 16rem;
+  }
+}
+
 .card__text__container {
   margin-left: 2rem;
 }
@@ -242,11 +249,17 @@
 
 @media (max-width: 500px) {
   .header {
-    max-width: 40rem;
+    max-width: 45rem;
   }
 }
 
 @media (max-width: 420px) {
+  .header {
+    max-width: 38rem;
+  }
+}
+
+@media (max-width: 320px) {
   .header {
     max-width: 30rem;
   }
@@ -716,13 +729,19 @@ template {
 
 @media (max-width: 500px) {
   .grid-container {
-    max-width: 40rem;
+    max-width: 45rem;
   }
 }
 
 @media (max-width: 420px) {
   .grid-container {
-    max-width: 35rem;
+    max-width: 38rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid-container {
+    max-width: 30rem;
   }
 }
 
