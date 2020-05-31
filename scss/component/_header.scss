@@ -27,4 +27,8 @@
     @media (max-width: $bp-mobile-sm) {
         max-width: 38rem;
     }
+
+    @media (max-width: $bp-mobile-xs) {
+        max-width: 30rem;
+    }
 }
