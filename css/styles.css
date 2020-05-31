@@ -698,7 +698,7 @@ template {
 
 @media (max-width: 1200px) {
   .grid-container {
-    max-width: 115rem;
+    max-width: 105rem;
   }
 }
 
