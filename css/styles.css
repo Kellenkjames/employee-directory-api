@@ -803,6 +803,12 @@ h1 {
   letter-spacing: .3em;
 }
 
+@media (max-width: 850px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.2rem;
