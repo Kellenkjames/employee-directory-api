@@ -150,7 +150,7 @@
           animation-delay: .11s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .card {
     width: 49%;
   }
