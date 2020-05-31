@@ -241,6 +241,12 @@
   }
 }
 
+@media (max-width: 850px) {
+  .header {
+    max-width: 80rem;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     max-width: 70rem;
@@ -255,7 +261,7 @@
 
 @media (max-width: 420px) {
   .header {
-    max-width: 38rem;
+    max-width: 30rem;
   }
 }
 
@@ -721,6 +727,12 @@ template {
   }
 }
 
+@media (max-width: 850px) {
+  .grid-container {
+    max-width: 80rem;
+  }
+}
+
 @media (max-width: 768px) {
   .grid-container {
     max-width: 70rem;
@@ -735,7 +747,7 @@ template {
 
 @media (max-width: 420px) {
   .grid-container {
-    max-width: 38rem;
+    max-width: 30rem;
   }
 }
 
