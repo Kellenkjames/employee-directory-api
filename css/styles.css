@@ -722,7 +722,7 @@ template {
 
 @media (max-width: 420px) {
   .grid-container {
-    max-width: 30rem;
+    max-width: 35rem;
   }
 }
 
