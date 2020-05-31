@@ -14,5 +14,13 @@
     @media (max-width: $bp-tablet) {
         max-width: 70rem;
     }
+
+    @media (max-width: $bp-mobile-md) {
+        max-width: 46rem;
+    }
+
+    @media (max-width: $bp-mobile-sm) {
+        max-width: 30rem;
+    }
 }
 

@@ -61,12 +61,21 @@ body {
         p {
             margin-bottom: 1.2rem;
             font-weight: 300;
+
+            @media (max-width: $bp-mobile-sm) {
+                font-size: 1.7rem;
+            }
         }
 
         &__birthday {
             margin-bottom: 0;
         }
 
+    }
+
+    @media (max-width: $bp-mobile-sm) {
+        width: 30rem;
+        padding: 2rem;
     }
 }
 

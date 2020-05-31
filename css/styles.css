@@ -27,7 +27,7 @@
   max-width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .card__avatar {
     height: 14rem;
     width: 14rem;
@@ -52,11 +52,31 @@
   margin-bottom: .5rem;
 }
 
+@media (max-width: 500px) {
+  .card__text__container__email {
+    font-size: 1.8rem;
+  }
+}
+
 .card__text__container p {
   color: #4b4849;
 }
 
 @media (max-width: 768px) {
+  .card__text__container {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .card__text__container {
+    margin-left: 2rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 320px) {
   .card__text__container {
     margin-left: 0;
     text-align: center;
@@ -139,6 +159,25 @@
   }
 }
 
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @-webkit-keyframes move-card {
   0% {
     -webkit-transform: translateY(-50%);
@@ -181,6 +220,19 @@
 @media (max-width: 768px) {
   .header {
     max-width: 70rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    max-width: 46rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 4rem 0;
+    max-width: 30rem;
   }
 }
 
@@ -246,8 +298,21 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 320px) {
+  .modal__text__container p {
+    font-size: 1.7rem;
+  }
+}
+
 .modal__text__container__birthday {
   margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .modal {
+    width: 30rem;
+    padding: 2rem;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -621,6 +686,18 @@ template {
   }
 }
 
+@media (max-width: 500px) {
+  .grid-container {
+    max-width: 46rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid-container {
+    max-width: 30rem;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -658,6 +735,20 @@ h1 {
 @media (max-width: 768px) {
   h1 {
     font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 

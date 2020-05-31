@@ -23,7 +23,7 @@
         display: block;
         max-width: 100%;
 
-        @media (max-width: $bp-laptop) {
+        @media (max-width: $bp-desktop) {
             height: 14rem;
             width: 14rem;
         }
@@ -42,6 +42,10 @@
 
         &__email {
             margin-bottom: .5rem;
+
+            @media (max-width: $bp-mobile-md) {
+                font-size: 1.8rem;
+            }
         }
 
         p {
@@ -49,6 +53,16 @@
         }
 
         @media (max-width: $bp-tablet) {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        @media (max-width: $bp-mobile-md) {
+            margin-left: 2rem;
+            text-align: left;
+        }
+
+        @media (max-width: $bp-mobile-sm) {
             margin-left: 0;
             text-align: center;
         }
@@ -109,6 +123,15 @@
     }
 
     @media (max-width: $bp-tablet) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $bp-mobile-md) {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    @media (max-width: $bp-mobile-sm) {
         flex-direction: column;
     }
 
