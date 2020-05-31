@@ -20,10 +20,16 @@
         border-radius: 50%;
         height: 16rem;
         width: 16rem;
+        display: block;
+        max-width: 100%;
 
         @media (max-width: $bp-laptop) {
             height: 14rem;
             width: 14rem;
+        }
+
+        @media (max-width: $bp-tablet) {
+            margin-bottom: 1rem;
         }
     }
 
@@ -40,6 +46,11 @@
 
         p {
             color: $color-dark;
+        }
+
+        @media (max-width: $bp-tablet) {
+            margin-left: 0;
+            text-align: center;
         }
     }
 
@@ -95,6 +106,10 @@
 
     @media (max-width: $bp-laptop) {
         width: 49%;
+    }
+
+    @media (max-width: $bp-tablet) {
+        flex-direction: column;
     }
 
 }
