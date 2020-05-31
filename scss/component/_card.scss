@@ -105,3 +105,13 @@
     }
 
 }
+
+// 1024px [RESPONSIVE]
+
+@media (max-width: $bp-laptop) {
+
+    .card {
+        width: 49%;
+    }
+
+}

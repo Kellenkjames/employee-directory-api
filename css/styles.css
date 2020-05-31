@@ -128,6 +128,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .card {
+    width: 49%;
+  }
+}
+
 .header {
   padding: 8rem 0;
 }
@@ -560,6 +566,13 @@ template {
       flex-wrap: wrap;
   max-width: 170rem;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 *,
