@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     @include main-spacing;
 
+    @media (max-width: $bp-desktop) {
+        max-width: 134rem;
+    }
+
     @media (max-width: $bp-laptop) {
         max-width: 95rem;
     }

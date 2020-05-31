@@ -50,6 +50,10 @@
 
         p {
             color: $color-dark;
+
+            @media (max-width: $bp-desktop) {
+                font-size: 1.7rem;
+            }
         }
 
         @media (max-width: $bp-tablet) {
@@ -118,7 +122,7 @@
         animation-delay: .11s;
     }
 
-    @media (max-width: $bp-laptop) {
+    @media (max-width: $bp-laptop-md) {
         width: 49%;
     }
 

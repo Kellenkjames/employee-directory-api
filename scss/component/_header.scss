@@ -1,11 +1,14 @@
 // GLOBAL IMPORTS ------------------------------- / 
 
 .header {
-    padding: 8rem 0;
+    padding: 4rem 0;
     @include main-spacing;
 
+    @media (max-width: $bp-desktop) {
+        max-width: 134rem;
+    }
+
     @media (max-width: $bp-laptop) {
-        padding: 8rem 0 4rem;
         max-width: 95rem;
     }
 
@@ -18,7 +21,6 @@
     }
 
     @media (max-width: $bp-mobile-sm) {
-        padding: 4rem 0;
         max-width: 30rem;
     }
 }
