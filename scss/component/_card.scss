@@ -7,13 +7,17 @@
     border: 2px solid $color-border;
     border-radius: .5rem;
     padding: 2rem;
-    width: 31%;
+    width: 32%;
     margin-bottom: 4rem;
     transition: border-color .3s ease;
     cursor: pointer;
 
     &:hover {
         border-color: $color-black;
+    }
+
+    @media (max-width: $bp-laptop-md) {
+        width: 49%;
     }
 
     &__avatar {
@@ -57,7 +61,7 @@
             color: $color-dark;
 
             @media (max-width: $bp-desktop) {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
             }
 
             @media (max-width: $bp-tablet-lg) {
@@ -133,10 +137,6 @@
 
     &:nth-child(11) {
         animation-delay: .11s;
-    }
-
-    @media (max-width: $bp-desktop) {
-        width: 49%;
     }
 
     @media (max-width: $bp-tablet) {

@@ -8,15 +8,15 @@
     @include main-spacing;
 
     @media (max-width: $bp-desktop) {
-        max-width: 122rem;
+        max-width: 130rem;
     }
 
     @media (max-width: $bp-laptop-md) {
-        max-width: 102rem;
+        max-width: 110rem;
     }
 
     @media (max-width: $bp-laptop) {
-        max-width: 87rem;
+        max-width: 93rem;
     }
     
     @media (max-width: $bp-tablet-lg) {
