@@ -83,7 +83,7 @@
 
 @media (max-width: 850px) {
   .card__text__container p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -273,7 +273,7 @@
 
 @media (max-width: 420px) {
   .header {
-    max-width: 30rem;
+    max-width: 37rem;
   }
 }
 
@@ -759,7 +759,7 @@ template {
 
 @media (max-width: 420px) {
   .grid-container {
-    max-width: 30rem;
+    max-width: 37rem;
   }
 }
 
